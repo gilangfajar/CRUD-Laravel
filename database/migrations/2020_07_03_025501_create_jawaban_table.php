@@ -18,6 +18,8 @@ class CreateJawabanTable extends Migration
             $table->string('isi');
             $table->unsignedBigInteger('pertanyaan_id');
             $table->foreign('pertanyaan_id')->references('id')->on('pertanyaan')->onDelete('cascade');
+            $table->date('tanggal_dibuat')->nullable();
+            $table->date('tanggal_diperbarui')->nullable();
             $table->timestamps();
         });
     }
