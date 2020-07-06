@@ -31,7 +31,7 @@
     </div>
     <div class="form-group">
         <label for="isi">Isi</label>
-        <textarea class="form-control" id="isi" name="isi" rows="3"></textarea>
+        <textarea class="form-control" id="isi" name="isi" placeholder="Enter Isi" rows="3"></textarea>
     </div>
     <div class="form-group">
         <input hidden value="{{\Carbon\Carbon::now()}}" type="text" class="form-control" name="tanggal_dibuat">
